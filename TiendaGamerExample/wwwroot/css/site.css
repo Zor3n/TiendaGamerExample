@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('file:///C:\Users\C3dr1k\source\repos\TiendaGamerExample\TiendaGamerExample\Fonts\Poppins\Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('file:///C:\Users\C3dr1k\source\repos\TiendaGamerExample\TiendaGamerExample\Fonts\Poppins\Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NovaMono-Regular';
+    src: url('file:///C:\Users\C3dr1k\source\repos\TiendaGamerExample\TiendaGamerExample\Fonts\NovaMono\NovaMono-Regular.ttf') format('truetype');
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-logo {
+    font-family: 'Nova Mono', monospace;
+}
+
+.logo-first {
+    color: deepskyblue;
+}
+
+.logo-second{
+    color: lawngreen;
+    text-decoration-line: underline;
+} 

@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TiendaGamerExample</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TiendaGamerExample.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-0 pb-3 sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand main-logo py-3 px-3 fs-3" asp-area="" asp-controller="Home" asp-action="Index">
+                    <span class="logo-first"> Tienda </span> <span class="logo-second"> <b>Gamer</b> </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white fs-5 py-2 px-3" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Lista de Partes
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item text-white py-2 pe-5 fs-5" href="#">Tarjetas Madre</a></li>
+                                <li><a class="dropdown-item text-white py-2 pe-5 fs-5" href="#">Procesadores</a></li>
+                                <li><a class="dropdown-item text-white py-2 pe-5 fs-5" href="#">Memorias RAM</a></li>
+                                <li><a class="dropdown-item text-white py-2 pe-5 fs-5" href="#">Almacenamiento</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-white  py-2 pe-5 fs-5" href="#">Chasis</a></li>
+                                <li><a class="dropdown-item text-white  py-2 pe-5 fs-5" href="#">Fuentes</a></li>
+                                <li><a class="dropdown-item text-white  py-2 pe-5 fs-5" href="#">Refrigeración</a></li>
+                                <li><a class="dropdown-item text-white  py-2 pe-5 fs-5" href="#">Tarjetas Gráficas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white fs-5 py-2 px-3" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Computadores
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item text-white py-2 pe-5 fs-5" href="#">Escritorio</a></li>
+                                <li><a class="dropdown-item text-white py-2 pe-5 fs-5" href="#">Portatiles</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-white py-2 pe-5 fs-5" href="#">Combos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white fs-5 py-2 px-3" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Perifericos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item text-white py-2 pe-5 fs-5" href="#">Pantallas</a></li>
+                                <li><a class="dropdown-item text-white py-2 pe-5 fs-5" href="#">Teclados</a></li>
+                                <li><a class="dropdown-item text-white py-2 pe-5 fs-5" href="#">Ratones</a></li>
+                                <li><a class="dropdown-item text-white py-2 pe-5 fs-5" href="#">Diademas</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-white py-2 pe-5 fs-5" href="#">Más Productos...</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white fs-5 py-2 px-3" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Complementos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item text-white py-2 pe-5 fs-5" href="#">Streaming</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-white py-2 pe-5 fs-5" href="#">Sillas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    @*<form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>*@
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - TiendaGamerExample - <a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
