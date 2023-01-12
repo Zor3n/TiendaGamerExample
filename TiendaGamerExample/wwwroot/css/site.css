@@ -46,3 +46,12 @@ body {
     text-decoration-line: underline;
 }
 
+.carousel-cell-fli {
+    width: 25%;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.flickity-page-dots {
+    display: none;
+}
