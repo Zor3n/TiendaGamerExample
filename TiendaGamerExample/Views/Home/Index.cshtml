@@ -116,80 +116,23 @@
     <div class="text-center my-5 fs-1 text-decoration-underline main-logo">NUEVOS PRODUCTOS</div>
 
     <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-        <div class="carousel-cell-fli">
-            <div class="card" style="width: 18rem;">
-                <img src="~/imgs/combos.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+        @for (var i = 0; i < 7; i++)
+        {
+            <div class="carousel-cell-fli">
+                <div class="card" style="width: 18rem;">
+                    <img src="~/imgs/combos.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="carousel-cell-fli">
-            <div class="card" style="width: 18rem;">
-                <img src="~/imgs/combos.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-cell-fli">
-            <div class="card" style="width: 18rem;">
-                <img src="~/imgs/combos.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-cell-fli">
-            <div class="card" style="width: 18rem;">
-                <img src="~/imgs/combos.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-cell-fli">
-            <div class="card" style="width: 18rem;">
-                <img src="~/imgs/combos.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-cell-fli">
-            <div class="card" style="width: 18rem;">
-                <img src="~/imgs/combos.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-cell-fli">
-            <div class="card" style="width: 18rem;">
-                <img src="~/imgs/combos.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
+        }
     </div>
 </section>
 
-<section>
+<section class="my-5">
     <div class="text-center my-5 fs-1 main-logo">RESEÑAS DE NUESTROS CLIENTES</div>
 
     <div class="py-5 bg-dark">
@@ -225,4 +168,25 @@
             </div>
         </div>
     </div>
+</section>
+
+<section class="container text-center my-5">
+    @for (var i = 0; i < 3; i++)
+    {
+        <div class="row">
+            @for (var j = 0; j < 4; j++)
+            {
+                <div class="col mb-5">
+                    <div class="card">
+                        <img src="~/imgs/silla_300x200.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
 </section>
